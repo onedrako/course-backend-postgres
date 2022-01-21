@@ -32,8 +32,10 @@ const UserSchema = {
 } //Define la estructura de la base de datos
 
 class User extends Model{
-  static associate(){
-    //models
+  static associate(models){
+    this.hasOne(models.Customer, {
+      as: "customer", 
+      foreignKey: "userId"})
   }
   static config(sequelize){
     return{
