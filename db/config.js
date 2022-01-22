@@ -11,5 +11,5 @@ module.exports = {
     ssl:{
       rejectUnauthorized: false
     }
+    }
   }
-}
