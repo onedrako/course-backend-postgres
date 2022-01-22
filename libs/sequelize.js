@@ -7,7 +7,7 @@ const options = {
   logging: config.isProd ? false : true,  //Para que la consulta se vea en consola
 }
 
-if(config.isProd){
+if(config.isProd){ 
   options.dialectOptions ={
     ssl : {
       rejectUnauthorized: false
